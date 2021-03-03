@@ -27,13 +27,13 @@ File = {
   lastModified: { type: Date, default: Date.now },
   dateAdded: { type: Date, default: Date.now },
   fileName: { type: String, required: true },
-  size:{type: Number, required: true}
+  size:{type: Number, required: true},
 };
 
 Course = {
   coursename: { type: String, required: true },
   courseFile: [{ type: Schema.Types.ObjectId, ref: "File" }],
-  lastModified: { type: Date, default: Date.now }
+  lastModified: { type: Date, default: Date.now },
 };
 ```
 
